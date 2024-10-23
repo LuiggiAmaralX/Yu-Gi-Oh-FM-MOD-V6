@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sobre a{
+    text-decoration: none;
+    color: #f88f06;
+}
+
+nav{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    background-color: #000000;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+nav .logo{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: #f88f06;
+}
+
+nav .menu-btn i{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.conteudo{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.conteudo .nome{
+    background-color: #1a1a1a;
+    padding: 40px;
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+body {
+    background-image: url(wallpaper.jpg);
+    background-size: cover; /* Faz com que o wallpaper preencha toda a tela */
+    background-repeat: no-repeat; /* Impede que o wallpaper se repita */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+}
+
+
+.nome img{
+    height: 350px;
+    width: auto;
+    z-index: 0;
+}
+
+.nome p{
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.nome span{
+    color: #f88f06;
+    font-size: 45px;
+}
+
+/* ------------------------------------- */
+
+.conteudoport .imagens{
+    padding-top: 11000px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    gap: 10px;
+    text-align: center; 
+}
+
+.imagens img{
+    height: 500px;
+    width: auto;
+    border: solid 3px black;
+    cursor: pointer;
+}
+
+.imagens img:hover{
+    height: 510px;
+    width: auto;
+}
+
+/* ------------------------------------- */
+
+.conteudocurriculo{
+    height: 100%;
+    color: #f88f06;
+    font-size: 30px;
+    justify-content: center; align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #161616;;
+    font-weight: bolder;
+}
+
+.conteudocurriculo span{
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.nomeprincipal p{
+    color: rgb(240, 176, 0);
+}
+
+.nomeprincipal img{
+    cursor: pointer;
+    margin: 10px;
+    height: 250px;
+    position: relative;
+    right: 0;
+    border-radius: 10px;
+}
+
+.nomeprincipal{
+    height: 12em;
+}
+
+.sobre, .formacao, .xp, .competencia{
+    margin: 10px;
+    height: 6em;
+    align-items: center; justify-content: center; text-align: center; display: flex;
+    flex-direction: column;
+}
+
+.sobre{
+    background-color: rgb(63, 63, 63);
+    word-wrap: break-word;
+}
+
+.formacao{
+    background-color: rgb(78, 78, 78);
+    word-wrap: break-word;
+}
+
+.xp{
+    background-color: rgb(63, 63, 63);
+    word-wrap: break-word;
+}
+
+.competencia{
+    background-color: rgb(78, 78, 78);
+    word-wrap: break-word;
+}
+
+/* ------------------------------------- */
+
+.conteudoredes{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: #f88f06;
+    font-size: 32px;
+    justify-content: center; align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #161616;;
+    font-weight: bolder;
+    padding: 50px;
+}
+
+.titulo-minhasredes{
+    /* background-color: rgb(63, 63, 63); */
+    width: 100%;
+}
+
+.titulo-minhasredes span{
+    font-size: 50px; color: #f88f06;
+}
+
+.icones{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    /* background-color: rgb(41, 40, 40); */
+    height: 16em;
+}
+
+.icones img{
+    max-height: 350px;
+    max-width: 300px;
+    cursor: pointer;
+    
+    border-radius: 20px;
+}
+
+.git{
+    height: 230px;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contato{
+    /* background-color: rgb(65, 65, 65); */
+    height: 13em;
+    width: 100%;
+    margin: 20px;
+}
+
+.contato input[type="submit"]:hover {
+    background-color: #f88f06;
+    cursor: pointer;
+}
+
+
+
+/* ------------------------------------- */
+
+@media (max-width: 1300px) {
+
+
+    nav {
+        position: relative;
+        z-index: 1001; 
+    }
+
+    nav .menu-btn i{
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #020202;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+        z-index: 1000; 
+    }
+
+    .conteudo, .conteudocurriculo {
+        z-index: 0; 
+    }
+
+    nav ul.open{
+        left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a {
+        font-size: 23px;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+        background: none;
+        color: #f88f06;
+    } 
+
+    .conteudo .imagens{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        gap: 20px;
+        padding-top: 10em;
+    }
+
+    .conteudo img{
+        height: 280px;
+    }
+
+    .imagens img:hover{
+        height: 230px;
+        width: auto;
+    }
+
+    .conteudocurriculo p{
+        font-size: 25px;
+    }
+
+    .conteudocurriculo span{
+        font-size: 20px;
+    }
+
+    .icones{
+        margin: 20px;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .icones img{
+        height: 250px;
+        width: 230px;
+        cursor: pointer;
+    }
+
+    .icones img:hover{
+        border: 5px solid white;
+        border-radius: 15px;
+        height: 270px;
+        width: 250px;
+    }
+
+    .conteudoport .imagens{
+        margin-top: 6em;
+        
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .imagens img{
+        height: 280px;
+        width: auto;
+        border: solid 3px black;
+        cursor: pointer;
+        margin-bottom: 2em;
+    }
+    
+    .imagens img:hover{
+        height: 310px;
+        width: auto;
+    }
+
+    .imagens{
+        
+        padding: 20px;
+        padding-bottom: 10px;
+    }
+    
+}

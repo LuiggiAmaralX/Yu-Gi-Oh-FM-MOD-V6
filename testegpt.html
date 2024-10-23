@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu responsivo</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav .menu-btn {
+            display: none; /* Oculta o botão de menu por padrão */
+        }
+
+        .character {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+            flex: 1 0 21%; /* Adiciona flexibilidade às divs para serem responsivas */
+        }
+
+        .character a {
+            text-decoration: none;
+            color: #f88f06;
+            font-size: 18px;
+            display: block; /* Faz o link preencher a div */
+        }
+
+        .character a:hover {
+            text-decoration: underline;
+        }
+
+        #character-list {
+            display: flex; /* Usar flexbox para alinhamento */
+            flex-wrap: wrap; /* Permite que as divs quebrem em várias linhas */
+            justify-content: center; /* Centraliza as divs */
+            padding: 20px; /* Adiciona espaçamento ao redor da lista */
+        }
+
+        /* Estilos para dispositivos móveis */
+        @media (max-width: 600px) {
+            .character {
+                flex: 1 0 46%; /* Reduz o tamanho das divs em telas menores */
+            }
+
+            nav ul li {
+                float: none; /* Muda o comportamento dos links para lista vertical */
+                text-align: center; /* Centraliza os links do menu */
+            }
+
+            .menu-btn {
+                display: block; /* Exibe o botão de menu em telas pequenas */
+            }
+        }
+    </style>  
+</head>
+
+<body>
+    <nav>
+        <div class="logo"></div>
+
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Galeria</a></li>
+            <li><a href="curriculo.html" class="active">Adições do Mod</a></li>
+            <li><a href="fusoes.html">Novas Fusões</a></li>
+            <li><a href="drops.html">Drops</a></li>
+            <li><a href="contato.html">Downloads</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudocurriculo">
+        <div class="nomeprincipal">
+            <img src="aaaa.png" alt="perfil" style="max-width: 150px; height: auto;">
+            <p>NOVOS DROPS</p>
+        </div>
+
+        <div id="character-list">
+            <div class="character">
+                <a href="https://link-para-planilha-bakura">BAKURA</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-pegasus">PEGASUS</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-isis">ISIS</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-kaiba">KAIBA</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-mage-soldier">MAGE SOLDIER</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-jono-2">JONO 2</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-tea-2">TEA 2</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-ocean-mage">OCEAN MAGE</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-high-mage-secmeton">HIGH MAGE SECMETON</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-forest-mage">FOREST MAGE</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-high-mage-anubisus">HIGH MAGE ANUBISUS</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-mountain-mage">MOUNTAIN MAGE</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-high-mage-atenza">HIGH MAGE ATENZA</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-desrt-mage">DESRT MAGE</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-high-marte-martis">HIGH MARTE MARTIS</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-meadow-mage">MEADOW MAGE</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-high-mage-kepura">HIGH MAGE KEPURA</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-labirinty-mage">LABIRINTY MAGE</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-seto-2">SETO 2</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-guardian-sebek">GUARDIAN SEBEK</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-guardian-neku">GUARDIAN NEKU</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-heishin-2">HEISHIN 2</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-seto-3">SETO 3</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-darknite">DARKNITE</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-nite-mare">NITE MARE</a>
+            </div>
+            <div class="character">
+                <a href="https://link-para-planilha-pharaoh-atem">PHARAOH ATEM</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
